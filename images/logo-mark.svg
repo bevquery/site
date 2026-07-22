@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 180" role="img" aria-label="BevQuery logo mark">
+  <circle cx="76" cy="76" r="58" fill="none" stroke="#EA8114" stroke-width="18"/>
+  <path d="M117 117 L153 153" fill="none" stroke="#EA8114" stroke-width="18" stroke-linecap="round"/>
+  <path d="M68 35h16v18c0 5 4 10 8 14 8 8 12 18 12 31v25c0 11-9 20-20 20H68c-11 0-20-9-20-20V98c0-13 4-23 12-31 4-4 8-9 8-14V35z" fill="#EA8114"/>
+  <rect x="67" y="25" width="18" height="15" rx="3" fill="#EA8114"/>
+  <path d="M53 104h46v17c0 9-7 16-16 16H69c-9 0-16-7-16-16v-17z" fill="#ffffff" opacity="0.9"/>
+</svg>
