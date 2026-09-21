@@ -241,6 +241,6 @@ input:focus, textarea:focus, select:focus { outline: 3px solid rgba(234,129,20,.
 
 @media (max-width: 620px) {
   .google-form {
-    height: 1450px;
+    height: 1550px;
   }
 }
