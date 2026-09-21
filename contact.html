@@ -1,30 +1,128 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
   <title>Contact BevQuery</title>
-  <meta name="description" content="Contact BevQuery or request access for your Ohio retail or distributor business.">
-  <link rel="icon" href="images/logo-mark.svg" type="image/svg+xml"><link rel="stylesheet" href="styles.css">
+  <meta
+    name="description"
+    content="Contact BevQuery or request access for your Ohio retail or distributor business."
+  >
+
+  <link rel="icon" href="images/logo-mark.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-<header class="site-header"><div class="container nav"><a class="brand" href="index.html"><img src="images/logo.svg" alt="BevQuery"></a><div class="nav-cta"><a class="button button-secondary" href="index.html">Back home</a><a class="button button-primary" href="https://bevquery.github.io/bevquery-app/">Log in</a></div></div></header>
-<main>
-  <section class="page-hero"><div class="narrow"><p class="eyebrow">Contact</p><h1>Let’s talk about BevQuery.</h1><p>Request access, ask a question or tell us how we can help.</p></div></section>
-  <section class="prose"><div class="container contact-layout">
-    <aside class="contact-card"><h2 style="font-size:1.8rem">Direct contact</h2><p>Email is the fastest way to reach us.</p><p><a href="mailto:support@bevquery.com">support@bevquery.com</a></p><p class="small">Please include your business name, Ohio county and whether you are a retailer or distributor.</p></aside>
-    <div class="contact-card"><h2 style="font-size:1.8rem">Request access</h2>
-      <form action="mailto:support@bevquery.com" method="post" enctype="text/plain">
-        <label>Name<input type="text" name="Name" required autocomplete="name"></label>
-        <label>Email<input type="email" name="Email" required autocomplete="email"></label>
-        <label>Business name<input type="text" name="Business" autocomplete="organization"></label>
-        <label>Business type<select name="Business type"><option value="">Select one</option><option>Retailer</option><option>Distributor</option><option>Other</option></select></label>
-        <label>Ohio county<input type="text" name="County"></label>
-        <label>Message<textarea name="Message" placeholder="Tell us what you would like to know."></textarea></label>
-        <button class="button button-primary" type="submit">Open email to BevQuery</button>
-        <p class="small">This static form opens your email application with the information above. You can also email us directly.</p>
-      </form>
+
+<header class="site-header">
+  <div class="container nav">
+    <a class="brand" href="index.html" aria-label="BevQuery home">
+      <img src="images/logo.svg" alt="BevQuery">
+    </a>
+
+    <div class="nav-cta">
+      <a class="button button-secondary" href="index.html">Back home</a>
+      <a
+        class="button button-primary"
+        href="https://bevquery.github.io/bevquery-app/"
+      >Log in</a>
     </div>
-  </div></section>
+  </div>
+</header>
+
+<main>
+
+  <section class="page-hero">
+    <div class="narrow">
+      <p class="eyebrow">Contact</p>
+      <h1>Let’s talk about BevQuery.</h1>
+      <p>
+        Request access, ask a question or tell us how we can help.
+      </p>
+    </div>
+  </section>
+
+  <section class="prose">
+    <div class="container contact-layout">
+
+      <aside class="contact-card">
+        <h2 style="font-size:1.8rem">Get in touch</h2>
+
+        <p>
+          Use the form to request access or send us a question about BevQuery.
+        </p>
+
+        <p>
+          Prefer email?
+          <a href="mailto:info@bevquery.com">info@bevquery.com</a>
+        </p>
+
+        <p class="small">
+          BevQuery is currently available to beverage retailers and
+          distributors in Ohio.
+        </p>
+      </aside>
+
+      <div class="contact-card contact-form-card">
+
+        <iframe
+          src="https://docs.google.com/forms/d/e/1FAIpQLScjL7QYCmboFh0K63svb8930cjHAvz4QYtC9znJssW__Am9qQ/viewform?embedded=true"
+          class="google-form"
+          title="Contact BevQuery"
+          loading="lazy"
+          frameborder="0"
+          marginheight="0"
+          marginwidth="0"
+        >
+          Loading…
+        </iframe>
+
+      </div>
+
+    </div>
+  </section>
+
 </main>
-<footer class="site-footer"><div class="container footer-grid"><div class="footer-brand"><img src="images/logo.svg" alt="BevQuery"><p>Ohio beverage distributor search.</p></div><nav class="footer-links"><a href="index.html">Home</a><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a></nav></div></footer>
-</body></html>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+
+    <div class="footer-brand">
+      <img src="images/logo.svg" alt="BevQuery">
+      <p>Ohio beverage distributor search.</p>
+    </div>
+
+    <nav class="footer-links" aria-label="Footer navigation">
+      <a href="index.html">Home</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="terms.html">Terms</a>
+    </nav>
+
+  </div>
+</footer>
+
+</body>
+</html>
+
+/* Google Form
+--------------------------------------------- */
+
+.contact-form-card {
+  padding: 0;
+  overflow: hidden;
+}
+
+.google-form {
+  display: block;
+  width: 100%;
+  height: 1050px;
+  border: 0;
+}
+
+@media (max-width: 768px) {
+  .google-form {
+    height: 1150px;
+  }
+}
