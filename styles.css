@@ -196,58 +196,51 @@ input:focus, textarea:focus, select:focus { outline: 3px solid rgba(234,129,20,.
   .footer-links { justify-content: flex-start; }
   .about-facts { grid-template-columns: 1fr; }
 }
+
 /* Contact page / Google Form
 --------------------------------------------- */
 
-.contact-layout-new {
-  display: grid;
-  grid-template-columns: 280px minmax(0, 1fr);
-  gap: 48px;
-  align-items: start;
+.contact-page {
+  max-width: 800px;
+  margin: 0 auto;
 }
 
-.contact-info {
-  background: #ffffff;
-  border: 1px solid #e5e7eb;
-  border-radius: 18px;
-  padding: 28px;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+.contact-intro {
+  text-align: center;
+  max-width: 680px;
+  margin: 0 auto 36px;
 }
 
-.contact-info h2 {
+.contact-intro h2 {
   margin-top: 0;
-  font-size: 1.8rem;
+}
+
+.contact-intro p {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contact-intro a {
+  color: var(--orange-dark);
+  font-weight: 750;
 }
 
 .google-form-wrapper {
   width: 100%;
-  min-width: 0;
-  background: #ffffff;
-  border-radius: 18px;
-  overflow: visible;
+  max-width: 760px;
+  margin: 0 auto;
 }
 
-.google-form-wrapper .google-form {
-  display: block !important;
-  width: 100% !important;
-  min-width: 100% !important;
-  height: 1400px !important;
-  border: 0 !important;
-  margin: 0 !important;
+.google-form {
+  display: block;
+  width: 100%;
+  height: 1350px;
+  border: 0;
+  margin: 0;
 }
 
-/* Stack on phones/tablets */
-@media (max-width: 800px) {
-  .contact-layout-new {
-    grid-template-columns: 1fr;
-    gap: 28px;
-  }
-
-  .contact-info {
-    padding: 24px;
-  }
-
-  .google-form-wrapper .google-form {
-    height: 1500px !important;
+@media (max-width: 620px) {
+  .google-form {
+    height: 1450px;
   }
 }
