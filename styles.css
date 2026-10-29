@@ -245,3 +245,137 @@ input:focus, textarea:focus, select:focus { outline: 3px solid rgba(234,129,20,.
   }
 }
 
+/* Homepage introduction video */
+#intro-video {
+  scroll-margin-top: 100px;
+}
+
+.video-heading {
+  max-width: 760px;
+  margin: 0 auto 24px;
+  text-align: center;
+}
+
+.video-heading h2 {
+  font-size: clamp(1.8rem, 3.5vw, 2.7rem);
+  margin-bottom: 12px;
+}
+
+.video-heading > p:last-child {
+  color: var(--muted);
+  margin: 0;
+}
+
+.intro-video {
+  position: relative;
+  width: 100%;
+  max-width: 900px;
+  margin-inline: auto;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  background: var(--ink);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+.video-preview {
+  position: absolute;
+  inset: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  border: 0;
+  background: var(--ink);
+  color: #fff;
+  cursor: pointer;
+  font: inherit;
+}
+
+.video-preview img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.video-preview::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    transparent 45%,
+    rgba(0, 0, 0, .75)
+  );
+}
+
+.video-play {
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  display: grid;
+  place-items: center;
+  width: 76px;
+  height: 76px;
+  padding-left: 4px;
+  border-radius: 50%;
+  background: var(--orange);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, .3);
+  font-size: 30px;
+  transform: translate(-50%, -50%);
+}
+
+.video-preview:hover .video-play {
+  background: var(--orange-dark);
+}
+
+.video-preview:focus-visible {
+  outline: 4px solid var(--orange);
+  outline-offset: -6px;
+}
+
+.video-caption {
+  position: absolute;
+  z-index: 1;
+  bottom: 20px;
+  left: 16px;
+  right: 16px;
+  text-align: center;
+  font-weight: 750;
+}
+
+.intro-video iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.video-fallback {
+  margin: 16px 0 0;
+  text-align: center;
+  font-size: .9rem;
+}
+
+.video-fallback a {
+  color: var(--orange-dark);
+}
+
+@media (max-width: 620px) {
+  .video-play {
+    width: 58px;
+    height: 58px;
+    font-size: 24px;
+  }
+
+  .video-caption {
+    bottom: 12px;
+    font-size: .9rem;
+  }
+
+  .intro-video {
+    border-radius: 18px;
+  }
+}
