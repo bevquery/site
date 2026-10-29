@@ -12,7 +12,8 @@
   <link rel="icon" href="images/logo-mark.png" type="image/png+xml">
   <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+
+  <body>
 
   <a class="skip-link" href="#main">Skip to content</a>
 <header class="site-header">
@@ -40,23 +41,40 @@
         <p class="lead">BevQuery helps retailers quickly identify who distributes a beer, wine or other beverage brand/producer in their location—and see who carries it elsewhere in the state.</p>
         <div class="hero-actions">
           <a class="button button-primary" href="contact.html">Request access</a>
-          <a class="button button-secondary" href="#how-it-works">See how it works</a>
+          <a class="button button-secondary" href="#intro-video">Watch the introduction</a>
         </div>
       </div>
-      <div class="hero-visual">
-        <div class="product-frame hero-frame">
-          <img src="images/search-results.png" alt="BevQuery search results showing the distributor for a brand in the user's location and distributors carrying the brand elsewhere in the state.">
-        </div>
-      </div>
-    </div>
-  </section>
 
-  <section class="trust-strip" aria-label="Product facts">
-    <div class="container trust-grid">
-      <div class="trust-item"><span>✓</span>State-wide and location-specific</div>
-      <div class="trust-item"><span>✓</span>Updated monthly</div>
-      <div class="trust-item"><span>✓</span>Purpose-built for the trade</div>
-    </div>
+<div class="hero-visual" id="intro-video">
+  <div class="video-heading">
+    <p class="eyebrow">A quick introduction</p>
+    <h2>See BevQuery in action</h2>
+    <p>Learn how to find a distributor and ask about pricing and availability.</p>
+  </div>
+
+  <div class="intro-video" id="bevquery-video">
+    <button
+      class="video-preview"
+      type="button"
+      aria-label="Play the BevQuery introduction video"
+    >
+      <img
+        src="https://i.ytimg.com/vi/6XsN8NxHawg/hqdefault.jpg"
+        alt=""
+        width="480"
+        height="360"
+      >
+      <span class="video-play" aria-hidden="true">▶</span>
+      <span class="video-caption">Watch the introduction</span>
+    </button>
+  </div>
+
+  <p class="video-fallback">
+    <a href="https://www.youtube.com/watch?v=6XsN8NxHawg">
+      Watch on YouTube
+    </a>
+  </p>
+</div>
   </section>
 
   <section class="section section-soft">
@@ -144,5 +162,34 @@
     <nav class="footer-links" aria-label="Footer navigation"><a href="#how-it-works">How it works</a><a href="contact.html">Contact</a><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a><a href="https://bevquery.github.io/bevquery-app/">Log in</a></nav>
   </div>
 </footer>
+
+<script>
+  (() => {
+    const container = document.getElementById("bevquery-video");
+    const button = container?.querySelector(".video-preview");
+
+    if (!button) return;
+
+    button.addEventListener("click", () => {
+      const player = document.createElement("iframe");
+
+      player.src =
+        "https://www.youtube-nocookie.com/embed/6XsN8NxHawg" +
+        "?autoplay=1&playsinline=1";
+
+      player.title = "BevQuery introduction";
+      player.allow =
+        "accelerometer; autoplay; clipboard-write; " +
+        "encrypted-media; gyroscope; picture-in-picture; fullscreen";
+      player.allowFullscreen = true;
+      player.referrerPolicy = "strict-origin-when-cross-origin";
+      player.tabIndex = 0;
+
+      container.replaceChildren(player);
+      player.focus();
+    });
+  })();
+</script>
+    
 </body>
 </html>
