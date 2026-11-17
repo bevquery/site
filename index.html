@@ -3,14 +3,53 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>BevQuery | Find Beverage Distributors Fast</title>
-  <meta name="description" content="BevQuery helps beverage retailers identify distributors for alcohol beverage products in their location—and see who carries the brand elsewhere in the state.">
-  <meta property="og:title" content="BevQuery | One search. The right distributor.">
-  <meta property="og:description" content="Find the distributor for beer, wine or other brand/producer in seconds.">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://bevquery.com/">
-  <link rel="icon" href="images/logo-mark.png" type="image/png+xml">
+  <title>Ohio Beer &amp; Wine Distributor Lookup | BevQuery</title>
+  <meta name="description" content="Find beer and wine distributors by brand, producer and county in Ohio. BevQuery helps beverage retailers and distributors identify representation and manage product inquiries.">
+  <link rel="icon" href="/images/logo-mark.png" type="image/png">
   <link rel="stylesheet" href="styles.css">
+
+<link rel="canonical" href="https://www.bevquery.com/">
+<meta property="og:title" content="Ohio Beer &amp; Wine Distributor Lookup | BevQuery">
+<meta property="og:description" content="Find beer and wine distributors by brand, producer and county in Ohio. BevQuery helps beverage retailers and distributors identify representation and manage product inquiries.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.bevquery.com/">
+<meta property="og:image" content="https://www.bevquery.com/images/logo-horiz.png">
+<meta property="og:site_name" content="BevQuery">
+<meta name="twitter:card" content="summary">
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://www.bevquery.com/#organization",
+      "name": "BevQuery",
+      "legalName": "KJM Products, Ltd.",
+      "url": "https://www.bevquery.com/",
+      "logo": "https://www.bevquery.com/images/logo-horiz.png",
+      "email": "info@bevquery.com"
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://www.bevquery.com/#website",
+      "url": "https://www.bevquery.com/",
+      "name": "BevQuery",
+      "publisher": {
+        "@id": "https://www.bevquery.com/#organization"
+      }
+    },
+    {
+      "@type": "WebApplication",
+      "name": "BevQuery",
+      "url": "https://bevquery.github.io/bevquery-app/",
+      "applicationCategory": "BusinessApplication",
+      "operatingSystem": "Web browser",
+      "description": "Ohio beer and wine distributor representation lookup by brand and county for beverage industry businesses.",
+      "provider": {
+        "@id": "https://www.bevquery.com/#organization"
+      }
+    }
+  ]
+}</script>
 </head>
 
   <body>
@@ -18,11 +57,11 @@
   <a class="skip-link" href="#main">Skip to content</a>
 <header class="site-header">
   <div class="container nav">
-    <a class="brand" href="index.html" aria-label="BevQuery home"><img src="images/logo-horiz.jpg" alt="BevQuery" style="height:30px; width:auto;"></a>
+    <a class="brand" href="/" aria-label="BevQuery home"><img src="images/logo-horiz.jpg" alt="BevQuery" style="height:30px; width:auto;"></a>
     <nav class="nav-links" aria-label="Primary navigation">
       <a href="#how-it-works">How it works</a>
-      <a href="#retailers">Retailers</a>
-      <a href="#distributors">Distributors</a>
+      <a href="/retailers/">Retailers</a>
+      <a href="/distributors/">Distributors</a>
       <a href="contact.html">Contact</a>
     </nav>
     <div class="nav-cta">
@@ -36,9 +75,10 @@
   <section class="hero">
     <div class="container">
       <div class="hero-copy">
-        <p class="eyebrow">Built for beverage retailers, on-premise and distributors</p>
-        <h1>One search.<br>The right distributor.</h1>
-        <p class="lead">BevQuery helps retailers quickly identify who distributes a beer, wine or other beverage brand/producer in their location—and see who carries it elsewhere in the state.</p>
+        <p class="eyebrow">Built for the Ohio beverage industry</p>
+        <p class="hero-tagline">One search.<br>The right distributor.</p>
+        <h1 class="seo-hero-heading">Ohio Beer &amp; Wine Distributor Lookup</h1>
+        <p class="lead">BevQuery helps retailers quickly identify who distributes a beer, wine or other beverage brand/producer in their Ohio county—and see who carries it elsewhere in Ohio.</p>
         <div class="hero-actions">
           <a class="button button-primary" href="contact.html">Request access</a>
           <a class="button button-secondary" href="#intro-video">Watch the introduction</a>
@@ -85,8 +125,8 @@
         <p>Whether you are filling a customer request, placing an order or tracking down a hard-to-find product, BevQuery turns a time-consuming search into a few quick clicks.</p>
       </div>
       <div class="card-grid">
-        <article class="card"><div class="icon">01</div><h3>Find the right distributor</h3><p>Search by brand or producer and immediately see who represents it in your location.</p></article>
-        <article class="card"><div class="icon">02</div><h3>See statewide representation</h3><p>When a brand is carried elsewhere in the state, BevQuery identifies those distributors too.</p></article>
+        <article class="card"><div class="icon">01</div><h3>Find the right distributor</h3><p>Search by brand or producer and immediately see who represents it in your Ohio county.</p></article>
+        <article class="card"><div class="icon">02</div><h3>See statewide representation</h3><p>When a brand is carried elsewhere in Ohio, BevQuery identifies those distributors too.</p></article>
         <article class="card"><div class="icon">03</div><h3>Product inquiries automatically sent</h3><p>When additional information is added to a query, the details are sent to participating distributors who can reply with pricing and availability.</p></article>
       </div>
     </div>
@@ -101,15 +141,15 @@
       <div class="steps">
         <article class="step">
           <div class="step-copy"><div class="step-number">1</div><h3>Start typing what you know</h3><p>Enter a producer or brand, and BevQuery suggests possible matches as you type, even when the name is incomplete.</p></div>
-          <div class="step-media"><div class="product-frame portrait"><img src="images/autocomplete.png" alt="BevQuery provides multiples suggestions - even for a partially entered brand name"></div></div>
+          <div class="step-media"><div class="product-frame portrait"><img loading="lazy" decoding="async" src="images/autocomplete.png" alt="BevQuery provides multiples suggestions - even for a partially entered brand name"></div></div>
         </article>
         <article class="step">
           <div class="step-copy"><div class="step-number">2</div><h3>Select the brand</h3><p>Choose the matching listing, add optional identifying details when useful, and submit to search.</p></div>
-          <div class="step-media"><div class="product-frame portrait"><img src="images/search-home.png" alt="BevQuery brand search screen with recent searches"></div></div>
+          <div class="step-media"><div class="product-frame portrait"><img loading="lazy" decoding="async" src="images/search-home.png" alt="BevQuery brand search screen with recent searches"></div></div>
         </article>
         <article class="step">
-          <div class="step-copy"><div class="step-number">3</div><h3>Get the answer—instantly</h3><p>BevQuery shows the distributor in your location and, where applicable, distributors that represent the same brand elsewhere in the state.</p></div>
-          <div class="step-media"><div class="product-frame portrait"><img src="images/search-results.png" alt="BevQuery results showing local and statewide distributor representation"></div></div>
+          <div class="step-copy"><div class="step-number">3</div><h3>Get the answer—instantly</h3><p>BevQuery shows the distributor in your Ohio county and, where applicable, distributors that represent the same brand elsewhere in Ohio.</p></div>
+          <div class="step-media"><div class="product-frame portrait"><img loading="lazy" decoding="async" src="images/search-results.png" alt="BevQuery results showing local and statewide distributor representation"></div></div>
         </article>
       </div>
     </div>
@@ -119,10 +159,10 @@
     <div class="container">
       <div class="section-heading center"><p class="eyebrow">Built for both sides of the trade</p><h2>A simpler connection between retailers and distributors.</h2></div>
       <div class="audience-grid">
-        <article class="audience"><h3>For retailers</h3><p>Get a dependable starting point when a customer asks for a product or you are exploring a new brand.</p><ul class="check-list"><li>Find distributors faster</li><li>Reduce calls and guesswork</li><li>See representation in otherlocations</li><li>Keep recent searches close at hand</li></ul></article>
-        <article class="audience" id="distributors"><h3>For participating distributors</h3><p>Receive and manage product inquiries from retailers actively searching for brands you represent.</p><ul class="check-list"><li>See new retailer inquiries in one place</li><li>Mark inquiries as received, uncertain or out of stock</li><li>Keep the retailer informed</li><li>Focus attention on active demand</li></ul></article>
+        <article class="audience"><h3>For retailers</h3><p>Get a dependable starting point when a customer asks for a product or you are exploring a new brand.</p><ul class="check-list"><li>Find distributors faster</li><li>Reduce calls and guesswork</li><li>See representation in other Ohio counties</li><li>Keep recent searches close at hand</li></ul><p><a href="/retailers/">Learn about BevQuery for retailers</a></p></article>
+        <article class="audience" id="distributors"><h3>For participating distributors</h3><p>Receive and manage product inquiries from retailers actively searching for brands you represent.</p><ul class="check-list"><li>See new retailer inquiries in one place</li><li>Mark inquiries as received, uncertain or out of stock</li><li>Keep the retailer informed</li><li>Focus attention on active demand</li></ul><p><a href="/distributors/">Learn about BevQuery for distributors</a></p></article>
       </div>
-      <div class="dashboard-wrap"><div class="product-frame"><img src="images/distributor-dashboard.png" alt="BevQuery distributor dashboard showing pending retailer inquiries and response buttons"></div></div>
+      <div class="dashboard-wrap"><div class="product-frame"><img loading="lazy" decoding="async" src="images/distributor-dashboard.png" alt="BevQuery distributor dashboard showing pending retailer inquiries and response buttons"></div></div>
     </div>
   </section>
 
@@ -137,16 +177,17 @@
     <div class="narrow">
       <div class="section-heading center"><p class="eyebrow">Frequently asked questions</p><h2>What to know before getting started.</h2></div>
       <div class="faq">
-        <details><summary>Who is BevQuery for?</summary><p>BevQuery is designed for licensed beverage retailers, resturants, bars, clubs and distributors.</p></details>
-        <details><summary>Does it cover the entire state?</summary><p>Yes. BevQuery provides statewide coverage.</p></details>
+        <details><summary>Who is BevQuery for?</summary><p>BevQuery is designed for licensed beverage retailers, restaurants, bars, clubs and distributors.</p></details>
+        <details><summary>Does it cover the entire state?</summary><p>Yes. BevQuery provides coverage across Ohio.</p></details>
         <details><summary>How often is the information updated?</summary><p>The representation data is updated monthly.</p></details>
-        <details><summary>What does “elsewhere in the state” mean?</summary><p>When a brand is not represented by the same distributor statewide, BevQuery can show distributors that carry it in other parts of the state. This is representation information—not distributor contact information or a list of other brands they carry.</p></details>
+        <details><summary>What does “elsewhere in Ohio” mean?</summary><p>When a brand is not represented by the same distributor statewide, BevQuery can show distributors that carry it in other parts of the state. This is representation information—not distributor contact information or a list of other brands they carry.</p></details>
         <details><summary>Can retailers ask about pricing or availability?</summary><p>When retailers submit additional information about the product they're looking for, BevQuery automatically submits that request to participating distributors. The distributor can then review and respond from their dashboard with pricing and availability information.</p></details>
         <details><summary>How do I request an account?</summary><p>Use the contact page to tell us about your business and request access.</p></details>
       </div>
     </div>
   </section>
 
+  <section class="section"><div class="narrow"><h2>Find distributors by beverage type</h2><p>Explore how BevQuery helps Ohio businesses find <a href="/wine-distributor-lookup.html">wine distributors by brand or producer</a> and <a href="/beer-distributor-lookup.html">beer distributors by brand</a>.</p></div></section>
   <section class="cta-band">
     <div class="container cta-inner">
       <h2>Stop guessing who carries what.</h2>
@@ -158,8 +199,8 @@
 
 <footer class="site-footer">
   <div class="container footer-grid">
-    <div class="footer-brand"><img src="images/logo-horiz.jpg" alt="BevQuery"><p>Beverage distributor search.</br>614-699-1840</br>info@bevquery.com</p></div>
-    <nav class="footer-links" aria-label="Footer navigation"><a href="#how-it-works">How it works</a><a href="contact.html">Contact</a><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a><a href="payments.html">Payments</a><a href="https://bevquery.github.io/bevquery-app/">Log in</a></nav>
+    <div class="footer-brand"><img src="images/logo-horiz.jpg" alt="BevQuery"><p>Beverage distributor search.<br>614-699-1840<br>info@bevquery.com</p></div>
+    <nav class="footer-links" aria-label="Footer navigation"><a href="/">Home</a><a href="/#how-it-works">How it works</a><a href="/retailers/">Retailers</a><a href="/distributors/">Distributors</a><a href="/wine-distributor-lookup.html">Wine lookup</a><a href="/beer-distributor-lookup.html">Beer lookup</a><a href="/contact.html">Contact</a><a href="/privacy.html">Privacy</a><a href="/terms.html">Terms</a><a href="/payments.html">Payments</a><a href="https://bevquery.github.io/bevquery-app/">Log in</a></nav>
   </div>
 </footer>
 
